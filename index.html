@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="website icon" type="jpeg" href="images/my photo.jpeg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <div class="toppart" id="toppart">
+        <div class="menu_list">
+            <a href="#fpart" id="home1">Home</a>
+            <a href="#spart" id="about1">About</a>
+            <a href="#tpart" id="pronskil1">Projects & Skills</a>
+            <a href="#fopart" id="connect1">Connect With Me</a>
+        </div>
+        <img src="images/burger-menu.png" alt="image" id="menubar">
+    </div>
+    <div class="menu_list_2">
+        <a href="#fpart" id="home" onclick="hides()">Home</a>
+        <a href="#spart" id="about" onclick="hides()">About</a>
+        <a href="#tpart" id="proski" onclick="hides()">Projects & Skills</a>
+        <a href="#fopart" id="contact" onclick="hides()">Connect With Me</a>
+    </div>
+
+    <div class="fpart" id="fpart">
+        <div class="frame">
+            <img src="images/my photo.jpeg">
+        </div>
+
+        <div class="name">
+            <h4>GAURAV PATIL</h4>
+            <h5>Hi There! I am a <span id="type"></span></h5>
+            <a href="Resume.pdf" download>Download Resume</a>
+        </div>
+    </div>
+    <div class="spart" id="spart">
+        <h1>About Me</h1>
+        <p>Hello there I am Gaurav Patil. I'm a third-year Information Technology engineering student at Savitribai
+            Phule Pune University (SPPU),
+            Pune, Maharashtra. With a strong foundation in Java, SQL, HTML, CSS, and JavaScript, I am passionate about
+            leveraging technology to solve real-world problems.
+
+            Currently residing in Pune, I am actively enhancing my skills through various projects and coursework. My
+            academic journey has equipped me with a solid understanding of computer science principles, including
+            automata theory, relational databases, and web development.</p>
+    </div>
+    <div class="tpart" id="tpart">
+        <h2>Skills & Projects</h2><br>
+        <div class="skillnproject">
+            <div class="skills">
+                <abbr title="Java"><img src="images/java.png"></abbr>
+                <abbr title="SQL"><img src="images/database.png"></abbr>
+                <abbr title="Dart"><img src="images/dart.png"></abbr>
+                <abbr title="HTML"><img src="images/html.png"></abbr>
+                <abbr title="CSS"><img src="images/css-3.png"></abbr>
+                <abbr title="JavaScript"><img src="images/java-script.png"></abbr>
+            </div>
+            <div class="projects">
+                <ul>
+                    <li>To Do List App<a href="https://github.com/gppatil23/ToDoList_App">></a></li>
+                    <li>BMI Calculator App<a href="https://github.com/gppatil23/Project-BMI-Calc">></a></li>
+                    <li>Professional Blogging Website <a
+                            href="https://github.com/gppatil23/Professional-Blog-Website">></a></li>
+                    <li>Professional Finance Management <a href="https://github.com/gppatil23/finance-management">></a>
+                    </li>
+                    <li>Netflix clone <a href="https://github.com/gppatil23/Netflix-Frontend">></a></li>
+                    <li>Weather Application <a href="https://github.com/gppatil23/weather-app">></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- --------------------------------------------Projects---------------------------- -->
+        <div class="mainpro" id="todo">
+            <div class="txtsub1">
+                <h1>To-Do List</h1>
+                <p>Developed Fully Functional To-Do List by using Flutter & Dart Programming where you can add your
+                    daily TO-DO tasks/work. After completion of task you can tick it as DONE & slide left to DELETE it
+                </p>
+                <label><a href="https://github.com/gppatil23/ToDoList_App">View Code</a></label>
+            </div>
+            <div class="versub2">
+                <img src="images/todo.jpeg" alt="image">
+            </div>
+        </div>
+
+        <div class="mainpro" id="bmi">
+            <div class="txtsub1">
+                <h1>BMI Calculator</h1>
+                <p>Developed Fully Functional BMI Calculator Application with Google's Android Studio. The Body Mass
+                    Index(BMI) helps us to identify how fit are we. So this Application helps to calculate the BMI by
+                    using WEIGHT(kg) & HEIGHT(feet).
+                </p>
+                <label><a href="https://github.com/gppatil23/Project-BMI-Calc">View Code</a></label>
+            </div>
+            <div class="versub2">
+                <img src="images/bmi1.jpg" alt="image2">
+            </div>
+        </div>
+
+        <div class="mainpro" id="finance">
+            <div class="txtsub1">
+                <h1>Professional Finance Managment</h1>
+                <p>Developed Fully Functional Professional Finance Manager where you can keep track of your INCOME &
+                    EXPENSE easily every month!
+                </p>
+                <label><a href="https://github.com/gppatil23/finance-management">View Code</a></label>
+            </div>
+            <div class="versub2">
+                <img src="images/financeimg.png" alt="image2">
+
+            </div>
+        </div>
+
+
+        <div class="mainpro" id="netflix">
+            <div class="txtsub1">
+                <h1>Netflix</h1>
+                <p>Developed Netflix Frontend Design with the help of HTML, CSS, JavaScript by fetching movie API
+                </p>
+                <label><a href="https://github.com/gppatil23/Netflix-Frontend">View Code</a></label>
+            </div>
+            <div class="horisub2">
+                <img src="images/netflixx.png" alt="image2">
+
+            </div>
+        </div>
+
+        <div class="mainpro" id="weather">
+            <div class="txtsub1">
+                <h1>Weather Info</h1>
+                <p>Developed Fully Functional Weather infomation page where you get weather info of your city or any
+                    other city, build using HTML CSS & JavaScript by fetching weather API
+                </p>
+                <label><a href="https://github.com/gppatil23/weather-app">View Code</a></label>
+            </div>
+            <div class="horisub2">
+                <img src="images/weather.png" alt="image2">
+            </div>
+        </div>
+    </div>
+
+    <div class="fopart" id="fopart">
+        <h2>Connect With Me!</h2>
+        <div>
+            <a href="https://github.com/gppatil23"><abbr title="Github"><img
+                        src="images/icons8-github-100.png"></abbr></a>
+            <a href="https://www.linkedin.com/in/gaurav-patil-7889b62b6/"><abbr title="Linkedin"><img
+                        src="images/icons8-linkedin-logo-100.png"></abbr></a>
+            <a href="https://www.instagram.com/gaurav.o__o/"><abbr title="Instagram"><img
+                        src="images/icons8-instagram-logo-100.png"></abbr></a>
+            <abbr title="Gmail"><a href="mailto:gppatil2306@gmail.com"><img
+                        src="images/icons8-gmail-logo-100.png"></a></abbr>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
